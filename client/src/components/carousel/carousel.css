@@ -1,0 +1,28 @@
+.upparwala{
+    width:75vw;
+    /* margin-top:10rem; */
+    margin: 12rem auto 2rem auto;
+    height: 20vh;
+    /* padding: 4rem; */
+}
+
+.carousel{
+    padding:2rem;
+    background-color: #ffffff;
+}
+
+.gg{
+    height: 60%;
+    width: 17rem;
+}
+
+.hg{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+.carousel-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
