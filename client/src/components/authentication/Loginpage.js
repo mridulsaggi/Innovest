@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import axios from "axios"
 import toast from "react-hot-toast"
-import { serverurl } from '..'
+import { serverurl } from '../../index.js'
 // import { isauth } from '../../../server/isauth'
 const Loginpage = () => {
         const [email, setEmail] = useState("");
@@ -25,10 +25,8 @@ const Loginpage = () => {
                 toast.success(`Welcome back , ${dd.data.name}`);
                 setisauth(true)
                 console.log(dd)
-                // console.log("hello bhai")
             }
             catch (error) {
-                console.log(error);
                 toast.error(error.response.data.message)
                 setisauth(false)
             }

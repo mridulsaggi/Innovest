@@ -11,21 +11,21 @@ const Live = () => {
           <li>
             <div className="icon"><i className="fa-solid fa-bicycle"></i></div>
             <div className="title">SHARK TANK 1</div>
-            <div className="descr">Luis Pillich</div>
+            <div className="descr">Mridul Saggi</div>
           </li>
         </Link>
         <Link to="/video">
           <li>
             <div className="icon"><i className="fa-solid fa-car"></i></div>
             <div className="title">SHARK TANK 2</div>
-            <div className="descr">Andrew Masotta</div>
+            <div className="descr">Bill Gates</div>
           </li>
         </Link>
         <Link to="/video">
           <li>
             <div className="icon"><i className="fa-solid fa-helicopter"></i></div>
             <div className="title">SHARK TANK 3</div>
-            <div className="descr">Michael Krakovsky</div>
+            <div className="descr">Elon Musk</div>
           </li>
         </Link>
       </ol>

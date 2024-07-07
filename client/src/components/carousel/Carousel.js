@@ -12,9 +12,10 @@ const Carousel = () => {
     return (
         <div className='upparwala ' id="dashboard">
             <div className="carousel  carousel-center max-w-max mb-20 mx-6 p-4 space-x-4 bg-neutral rounded-box">
-                <Link to="/marketplace" className="carousel-item">
+                <Link to="/marketplace" className="carousel-item relative">
                     <div className="hg">MARKETPLACE</div>
                     <img src={cam} className="rounded-box gg" />
+                    {/* <div className='bg-slate-300 z-3 absolute w-[100%] h-[5rem]'>description</div> */}
                 </Link>
                 <Link to="/sharktank" className="carousel-item">
                     <div className="hg">SHARKTANK</div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import axios from "axios"
 import toast from "react-hot-toast"
-import { serverurl } from '..'
+import { serverurl } from '../../index.js'
 // import { isauth } from '../../../server/isauth'
 const Register = () => {
     const [email, setEmail] = useState("");

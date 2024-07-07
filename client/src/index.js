@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Toaster} from "react-hot-toast"
 import "./index.css";
 import "./dist/output.css";
 import App from "./App";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 // import Login from './components/login';
-import Register from "./components/register.js";
-import Loginpage from "./components/Loginpage.js";
+import Register from "./components/authentication/register.js";
+import Loginpage from "./components/authentication/Loginpage.js";
 import BizzGPT from "./components/bizzgpt.js";
 import Evaluate from "./components/evaluate.js";
 import Sharktank from "./components/videoconf/Sharktank.js";
@@ -52,6 +53,7 @@ root.render(
       <Route path="/news" element={<News />} />
       <Route path="/hello" element={<Carousel />} />
     </Routes>
+    <Toaster/>
   </Router>
   // <React.StrictMode>
   //   <App />

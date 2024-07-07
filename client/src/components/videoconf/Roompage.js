@@ -8,8 +8,8 @@ const Roompage = () => {
 
   useEffect(() => {
     const mymeeting = async (element) => {
-      const appId = 330352337;
-      const serverSecret = "08a79252b5da8661460608806dfc7b53";
+      const appId = 2015602674;
+      const serverSecret = "8ffff975ffe69deeba2c9d0c3c78e79f";
       const kittoken = ZegoUIKitPrebuilt.generateKitTokenForTest(
         appId, serverSecret, roomid, Date.now().toString(), "Mridul"
       );
@@ -26,7 +26,7 @@ const Roompage = () => {
   }, [roomid]);
 
   return (
-    <div>
+    <div className="bg-slate-200 w-[80%] mx-auto my-[10rem]">
       <div ref={meetingRef} />
     </div>
   );
