@@ -36,10 +36,10 @@ const Loginpage = () => {
             return <Navigate to={"/features"} />
         }
         return (
-            <div className="login md:flex">
+            <div className="login md:flex ">
                 <div
                     class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
-                    <div>
+                    <div class="text-center">
                         <h1 class="text-white font-bold text-4xl font-sans">LOGIN TO UNLOCK THE FEATURES</h1>
                         <p class="text-white mt-1">PLATFORM FOR ALL INVESTMENT/FUNDING SOLUTIONS</p>
                         {/* <button type="submit" class="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2">Read More</button> */}
