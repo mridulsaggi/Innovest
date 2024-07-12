@@ -5,61 +5,63 @@ import Three from "./c3";
 import Four from "./c4";
 import Five from "./c5";
 import Six from "./c6";
-import hh from "./pic.png"
+import hh from "./pic.png";
+import './card.css'
 import Carousel from "./carousel/Carousel";
-import gsap from "gsap"
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 function Hero() {
-  const a=useRef(null);
-  useEffect(()=>{
-    const b=a.current;
-    gsap.from(".ii ",{
-      opacity:0,
-      duration:3,
-      delay:1,
-      
-    })
-    gsap.from(".hero-content",{
-      y:-500,
-      opacity:0,
-      duration:1
-    })
-    gsap.to(".scrollniche",{
-      y:10,
-      duration:1,
-      repeat:-1,
-      yoyo:true
-    })
-  },[])
+  const a = useRef(null);
+  useEffect(() => {
+    const b = a.current;
+    gsap.from(".ii ", {
+      opacity: 0,
+      duration: 3,
+      delay: 1,
+    });
+    gsap.from(".hero-content", {
+      y: -500,
+      opacity: 0,
+      duration: 1,
+    });
+    gsap.to(".scrollniche", {
+      y: 10,
+      duration: 1,
+      repeat: -1,
+      yoyo: true,
+    });
+  }, []);
   // gsap.from(".ii , .hero-content",{
   //   opacity:0,
   //   duration:2,
   //   delay:1
   // })
-  gsap.to(".scrollniche",{
-    y:10,
-    duration:1,
-    repeat:-1,
-    yoyo:true
-  })
+  gsap.to(".scrollniche", {
+    y: 10,
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
+  });
   // var t1=gsap.timeline({scrollTrigger:{
   //   trigger:".hero",
-    
+
   // }})
-  
+
   // t1.to(".ii",{
   //   y:300,
   //   right:"20%"
   // })
 
   return (
-    <div className="hero min-h-screen bg-base-200 flex ">
-      <div className="kk"><img className="ii" src={hh}></img></div>
+    <div className="hero min-h-screen bg-base-200 flex w-full text-center">
+      <div className="kk">
+        <img className="ii hidden sm:inline" src={hh}></img>
+      </div>
       <div className="hero-content text-center">
-        <div className="max-w-screen">
-          <h1 className="text-9xl font-bold">InnoVest</h1>
+        <div className="w-full">
+          <h1 className="text-5xl font-bold md:text-9xl">InnoVest</h1>
           <p className="py-6 text-2xl">Innovate - Invest - Inspire</p>
           <a className=" btn btn-outline btn-circle svg-icon" href="#dashboard">
             <svg
@@ -80,51 +82,44 @@ function Hero() {
 
 function Dashboard() {
   return (
-    <div id="a" className="p-10">
-      <div className="flex w-full py-5">
+    <div id="allfeaturesdiv" className="grid gap-3 grid-cols-3 p-10">
         <Link
           to={"/marketplace"}
           className="flex-grow grid h-fit rounded-box place-items-center"
         >
           <One></One>
         </Link>
-        <div className="divider divider-horizontal"></div>
         <Link
           to={"/sharktank"}
           className="flex-grow grid h-fit rounded-box place-items-center"
         >
           <Two></Two>
         </Link>
-        <div className="divider divider-horizontal"></div>
         <Link
           to={"/evaluate"}
           className="flex-grow grid h-fit rounded-box place-items-center"
         >
           <Three></Three>
         </Link>
-      </div>
-      <div className="flex w-full py-5">
         <Link
           to={"/bizzgpt"}
           className="flex-grow grid h-fit rounded-box place-items-center"
         >
           <Four />
         </Link>
-        <div className="divider divider-horizontal"></div>
         <Link
           to={"/showcase"}
           className="flex-grow grid h-fit rounded-box place-items-center"
         >
           <Five />
         </Link>
-        <div className="divider divider-horizontal"></div>
         <Link
           to={"/news"}
           className="flex-grow grid h-fit rounded-box place-items-center"
         >
           <Six></Six>
         </Link>
-      </div>
+      
     </div>
   );
 }
@@ -133,7 +128,8 @@ export default function Home() {
   return (
     <div>
       <Hero></Hero>
-      <Carousel/>
+      {/* <Carousel/> */}
+      <Dashboard />
     </div>
   );
 }

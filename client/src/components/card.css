@@ -19,7 +19,8 @@ body, html {
     height: 40px;
   }
   .skill-card:hover .skill-card__header .skill-card__icon {
-    transform: translateX(-50%) translateY(-50%) scale(3);
+    /* transform: translateX(-100%) translateY(-100%) scale(3); */
+    opacity: 0;
   }
   .skill-card:hover .skill-card__body {
     height: 170px;
@@ -88,4 +89,26 @@ body, html {
     transition-duration: 0;
     transition-delay: 0.5s;
     transform: translateX(-100%);
+  }
+
+  #allfeaturesdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem
+  }
+
+
+  @media screen and (max-width: 900px) {
+    #allfeaturesdiv{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap:2rem
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #allfeaturesdiv{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:2rem
+    }
   }
