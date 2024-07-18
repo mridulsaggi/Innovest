@@ -6,7 +6,7 @@ import Four from "./c4";
 import Five from "./c5";
 import Six from "./c6";
 import hh from "./pic.png";
-import './card.css'
+import "./card.css";
 import Carousel from "./carousel/Carousel";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -57,7 +57,7 @@ function Hero() {
   return (
     <div className="hero min-h-screen bg-base-200 flex w-full text-center">
       <div className="kk">
-        <img className="ii hidden sm:inline" src={hh}></img>
+        <img className="ii" src={hh}></img>
       </div>
       <div className="hero-content text-center">
         <div className="w-full">
@@ -83,43 +83,42 @@ function Hero() {
 function Dashboard() {
   return (
     <div id="allfeaturesdiv" className="grid gap-3 grid-cols-3 p-10">
-        <Link
-          to={"/marketplace"}
-          className="flex-grow grid h-fit rounded-box place-items-center"
-        >
-          <One></One>
-        </Link>
-        <Link
-          to={"/sharktank"}
-          className="flex-grow grid h-fit rounded-box place-items-center"
-        >
-          <Two></Two>
-        </Link>
-        <Link
-          to={"/evaluate"}
-          className="flex-grow grid h-fit rounded-box place-items-center"
-        >
-          <Three></Three>
-        </Link>
-        <Link
-          to={"/bizzgpt"}
-          className="flex-grow grid h-fit rounded-box place-items-center"
-        >
-          <Four />
-        </Link>
-        <Link
-          to={"/showcase"}
-          className="flex-grow grid h-fit rounded-box place-items-center"
-        >
-          <Five />
-        </Link>
-        <Link
-          to={"/news"}
-          className="flex-grow grid h-fit rounded-box place-items-center"
-        >
-          <Six></Six>
-        </Link>
-      
+      <Link
+        to={"/marketplace"}
+        className="flex-grow grid h-fit rounded-box place-items-center"
+      >
+        <One></One>
+      </Link>
+      <Link
+        to={"/sharktank"}
+        className="flex-grow grid h-fit rounded-box place-items-center"
+      >
+        <Two></Two>
+      </Link>
+      <Link
+        to={"/evaluate"}
+        className="flex-grow grid h-fit rounded-box place-items-center"
+      >
+        <Three></Three>
+      </Link>
+      <Link
+        to={"/bizzgpt"}
+        className="flex-grow grid h-fit rounded-box place-items-center"
+      >
+        <Four />
+      </Link>
+      <Link
+        to={"/showcase"}
+        className="flex-grow grid h-fit rounded-box place-items-center"
+      >
+        <Five />
+      </Link>
+      <Link
+        to={"/news"}
+        className="flex-grow grid h-fit rounded-box place-items-center"
+      >
+        <Six></Six>
+      </Link>
     </div>
   );
 }

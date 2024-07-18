@@ -67,7 +67,8 @@ const StartupCard = ({
   }
 
   return (
-    <div className="card w-96 m-5 bg-primary text-primary-content">
+    <>
+    <div className="card w-72 m-5 bg-primary text-primary-content">
       <div className="card-body">
         <h2 className="card-title overflow-hidden whitespace-nowrap overflow-ellipsis">
           {name}
@@ -92,7 +93,7 @@ const StartupCard = ({
           </button>
         </div>
       </div>
-
+  </div>
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50">
@@ -156,7 +157,7 @@ const StartupCard = ({
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

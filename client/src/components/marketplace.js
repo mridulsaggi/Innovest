@@ -34,13 +34,13 @@ export default function Marketplace() {
     "Fashion",
     "Travel",
     "Entertainment",
-    "Fitness",
-    "Sustainability",
     "Education",
-    "Food and Beverages",
     "Blockchain",
     "AI",
-    "Security",
+    // "Fitness",
+    // "Food and Beverages",
+    // "Sustainability",
+    // "Security",
   ];
 
   // Use useEffect to fetch data when the component mounts
@@ -72,8 +72,8 @@ export default function Marketplace() {
   };
 
   return (
-    <div className="bg-base-200 min-h-screen">
-      <div className="flex space-x-2 p-4 justify-center">
+    <div className="bg-base-200 h-full">
+      <div className="flex space-x-2 p-4 justify-center w-[70vw]">
         <Tag label="All" onClick={() => setSelectedTags([])} />
         {allTags.map((tag, index) => (
           <React.Fragment key={index}>
@@ -85,7 +85,7 @@ export default function Marketplace() {
       <div className="flex justify-centre mm">
       <Link to="/marketplace/post" className="btn btn-success">ADD POST</Link>
       </div>
-      <div className="flex justify-center flex-wrap">
+      <div className="grid grid-cols-3">
         {filteredStartups.map((startup, index) => (
           <StartupCard key={index} {...startup} />
         ))}
